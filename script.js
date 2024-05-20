@@ -1,16 +1,16 @@
-let pronoun = ["the", "our", "your", "his"];
-let adj = ["great", "big", "little", "terrific", "georgeous"];
-let noun = ["jogger", "racoon", "runner", "eco", "system"];
+const PRONOUN = ["the", "our", "your", "his"];
+const ADJ = ["great", "big", "little", "terrific", "georgeous"];
+const NOUN = ["jogger", "racoon", "runner", "eco", "system"];
 
 let domainName = [];
 
-for (let i = 0; i < pronoun.length; i++) {
-  for (let a = 0; a < adj.length; a++) {
-    for (let n = 0; n < noun.length; n++) {
-      domainName.push(`${pronoun[i]}${adj[a]}${noun[n]}.com`);
-      domainName.push(`${pronoun[i]}${adj[a]}${noun[n]}.net`);
+for (let i = 0; i < PRONOUN.length; i++) {
+  for (let a = 0; a < ADJ.length; a++) {
+    for (let n = 0; n < NOUN.length; n++) {
+      domainName.push(`${PRONOUN[i]}${ADJ[a]}${NOUN[n]}.com`);
+      domainName.push(`${PRONOUN[i]}${ADJ[a]}${NOUN[n]}.net`);
     }
   }
 }
 
-console.log(domainName);
+console.log(domainName.join('\n'));
